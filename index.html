@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="./img/AguRuben.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gentium+Book+Plus&family=Julee&family=Playfair+Display&family=Roboto:ital@0;1&family=Rubik:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>InversionesAgu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <img src="./img/AguRuben-1.png" style="width: 80px; height: 80px;" alt="">
+            <nav id="nav" class="">
+              <ul id="links">
+                <li><a href="#inicio" class="seleccionado" onclick="selecionar(this)">INICIO</a></li>
+                <li><a href="#sobremi" onclick="selecionar(this)">SOBRE MI</a></li>
+                <li><a href="#servicios" onclick="selecionar(this)">HABILIDADES</a></li>
+                <li><a href="#cripto" onclick="selecionar(this)">CRIPTOS</a></li>
+                <li><a href="#contacto" onclick="selecionar(this)">CONTACTO</a></li>
+
+              </ul>
+            </nav>
+<!-- iconos del menu responsive-->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- iconos del menu responsive-->
+            <div class="redes">
+              <a href="https://www.instagram.com/aguruben/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://t.me/traderislife1" target="_blank"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+              <a href="https://www.tiktok.com/@aguruben" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/3472628493?text=Hola!%20mi%20nombre%20es%20...%20quisiera%20hablar%20con%20vos" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </header>
+        <div class="presetancion">
+          <p style="color: wheat;" class="bienvenida">Bienvenidos</p>
+          <h2 style="color: aliceblue;">Soy <span>Agustín Ruben</span>, trader profesional</h2>
+          <p style="color: aliceblue;" class="descripcion">Hago trading, especulo a traves de analisis tecnicos y fundamentales para obtener beneficios en el  mercado de los valores  </p>
+          <a href="#contacto">CONTACTAME</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img style="width: 500px; height: 500px;" src="img/fotoperfil2.png" alt="">
+      </div>
+      <div class="sobremi">
+      <p class="titulo-seccion">Sobre mi</p>
+      <h2>Hola, soy <span>Agustín Ruben</span></h2>
+      <h3>Trader profesional</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat expedita iusto quis quo molestias, facere atque tempore accusamus ad minus molestiae consectetur. Nobis tempora illo commodi blanditiis? Nostrum, voluptate.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis repellat expedita iusto quis quo molestias, facere atque tempore accusamus ad minus molestiae consectetur. Nobis tempora illo commodi blanditiis? Nostrum, voluptate.  </p>
+    </div>
+    </section>
+
+    <section id="servicios">
+      <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+          <div class="info">
+            <p><span class="lista"></span>Conocimientos financieros</p>
+            <span class="porcentaje">95%</span>
+          </div>
+          <div class="barra">
+            <div id="cF" class=""></div>
+          </div>
+        </div>
+      
+        <div class="skill">
+          <div class="info">
+            <p><span class="lista"></span>Habilidad analítica</p>
+            <span class="porcentaje">90%</span>
+          </div>
+          <div class="barra">
+            <div id="hA" class=""></div>
+          </div>
+        </div>
+      
+        <div class="skill">
+          <div class="info">
+            <p><span class="lista"></span>Disciplina</p>
+            <span class="porcentaje">90%</span>
+          </div>
+          <div class="barra">
+            <div id="d" class=""></div>
+          </div>
+        </div>
+      
+        <div class="skill">
+          <div class="info">
+            <p><span class="lista"></span>Habilidad para trabajar bajo presión</p>
+            <span class="porcentaje">95%</span>
+          </div>
+          <div class="barra">
+            <div id="hbP" class=""></div>
+          </div>
+        </div>
+      
+      </div>
+      
+    </section>
+    <section id="cripto">
+    <h1>Precios Criptos</h1>
+    <div class="container">
+      <div class="crypto">
+        <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg" alt="Bitcoin logo">
+        <h2>Bitcoin</h2>
+        <p id="bitcoin-price"></p>
+      </div>
+      <div class="crypto">
+        <img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg" alt="Ethereum logo">
+        <h2>Ethereum</h2>
+        <p id="ethereum-price"></p>
+      </div>
+      <div class="crypto">
+        <img src="https://cryptologos.cc/logos/cardano-ada-logo.svg" alt="Cardano logo">
+        <h2>Cardano</h2>
+        <p id="cardano-price"></p>
+      </div>
+      <div class="crypto">
+        <img src="https://cryptologos.cc/logos/solana-sol-logo.svg" alt="Solana logo">
+        <h2>Solana</h2>
+        <p id="solana-price"></p>
+      </div>
+      <div class="crypto">
+        <img src="https://cryptologos.cc/logos/litecoin-ltc-logo.svg" alt="Litecoin logo">
+        <h2>Litecoin</h2>
+        <p id="litecoin-price"></p>
+      </div>
+    </div>
+  </section>
+
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      <div class="contenedor-form">
+        <form action="">
+          <div class="fila mitad">
+            <input type="text" placeholder="Nombre Completo" class="input-mitad">
+            <input type="text" placeholder="Direccion de Email" class="input-mitad">
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Tema..." class="input-full">
+          </div>
+          <div class="fila">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+          </div>
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Todos los derechos reservados - 2023</p>
+      <a href="https://www.instagram.com/aguruben/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me/traderislife1" target="_blank"><i class="fa-brands fa-telegram" target="_blank"></i></a>
+      <a href="https://www.tiktok.com/@aguruben" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://wa.me/3472628493?text=Hola!%20mi%20nombre%20es%20...%20quisiera%20hablar%20con%20vos" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
