@@ -225,9 +225,13 @@ html {
 margin-top: -90px;
 text-align: center;
 margin-bottom: 100px;
+
   
 }
-
+.video iframe {
+  width: 70%;
+  height: 450px;
+}
 /* 
 Seccion habilidades 
   */
@@ -494,6 +498,7 @@ footer a {
   }
   #sobremi .contenedor-foto img {
     padding: 8px;
+    width: 100%;
   }
   #sobremi .sobremi .titulo-seccion{
     text-align: center;
@@ -536,6 +541,50 @@ footer a {
     margin-bottom: 15px;
   }
  }
+
+
+@media screen and (max-width:1065) {
+  .video iframe{
+    max-width: 100%;
+    height: 100px;
+   
+  }
+  .video {
+    margin-top:-500px;
+  }
+} 
+
+ @media screen and (max-width:658px) {
+  #sobremi .contenedor-foto img{
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+ }
+
+ @media screen and (max-width:582px) {
+  #sobremi .contenedor-foto{
+    padding-left: 30px;
+    margin: auto;
+  }
+ }
+
+ @media screen and (max-width:532px) {
+  #sobremi .contenedor-foto{
+    padding-left: 15px;
+    margin: auto;
+  }
+}
+  @media screen and (max-width: 514px) {
+    #sobremi img {
+    max-width: 100%;
+    height: auto;
+    }   
+   }
+  
+
+
+
 
 
 
@@ -611,30 +660,6 @@ footer a {
  #servicios .fila .servicio p {
   font-size: 14px;
   line-height:22px ;
- }
-
-
-
-
- @media screen and (max-width:658px) {
-  #sobremi .contenedor-foto{
-    padding-left: 75px;
-    margin: auto;
-  }
- }
-
- @media screen and (max-width:582px) {
-  #sobremi .contenedor-foto{
-    padding-left: 30px;
-    margin: auto;
-  }
- }
-
- @media screen and (max-width:532px) {
-  #sobremi .contenedor-foto{
-    padding-left: 15px;
-    margin: auto;
-  }
  }
 
 
