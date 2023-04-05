@@ -144,6 +144,7 @@ html {
   padding: 100px 15px;
   color: #111135;
   display: flex;
+ 
 }
 
 #sobremi .contendor-foto {
@@ -221,9 +222,9 @@ html {
 
 /* seccion video */
 .video {
-
+margin-top: -90px;
 text-align: center;
-margin-bottom: 500px;  
+margin-bottom: 100px;
   
 }
 
@@ -504,6 +505,7 @@ footer a {
   #servicios{
     padding: 50px 15px;
   }
+
   #servicios .fila{
     display: block;
   }
@@ -543,6 +545,7 @@ footer a {
 /* cards de servicios  */
 
  #servicios {
+  margin-top: -102px;
   padding: 100px 15px;
   text-align: center;
   background-color: #f3f3f3;
@@ -586,7 +589,7 @@ footer a {
   height: 300px;
   border-radius: 50%;
   background-color:  #af96f3;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 25px;
  }
 
